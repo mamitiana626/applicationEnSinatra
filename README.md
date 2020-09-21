@@ -10,9 +10,9 @@ Une fois le repertoire cloner, executer **bundle install** dans le terminal
 Ensuite veiller entrer dans la dossier et d' executer la commade suivante **rackup** pour lancer l'application sinatra
 
 Vous aurez la résultat suivant dans le terminal : 
-        [2020-09-21 15:18:03] INFO  WEBrick 1.6.0
-        [2020-09-21 15:18:03] INFO  ruby 2.7.1 (2020-03-31) [x86_64-linux]
-        [2020-09-21 15:18:03] INFO  WEBrick::HTTPServer#start: pid=22710 port=9292
+            [2020-09-21 15:18:03] INFO  WEBrick 1.6.0
+            [2020-09-21 15:18:03] INFO  ruby 2.7.1 (2020-03-31) [x86_64-linux]
+            [2020-09-21 15:18:03] INFO  WEBrick::HTTPServer#start: pid=22710 port=9292
 
 Ensuite entrer ceci dans l'Url de navigateur **http://localhost:9292**
 
