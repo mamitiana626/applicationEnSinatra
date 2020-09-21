@@ -1,0 +1,25 @@
+  
+<html>
+<head>
+  <title>sinatraProject</title>
+</head>
+<body>
+  <h1>PAGE POTIN</h1>
+  <h3>Voici la page du potin n°<%= id %></h3>
+      <p>
+        Son Auteur : <%= gossip.author %><br/>
+        Le contenu du potin : <%= gossip.content %><br/>
+        <a href = '/gossips/<%= id %>/edit' >Modifier le Gossip</a>
+      </p>
+  <h3>Section commentaires du potin n°<%= id %></h3>
+  <% comments.each_with_index do |comment,index| %><!-- on boucle sur le tableau des commentaires (recupéré depuis Comment.all_with_id -->
+      <p>Comment n°<%= index %> :<br/><%= comment.content %><br/>
+      </p>
+  <% end %>
+  <form action='/gossips/<%= id%>' method='POST'><!-- Formulaire nouveau commentaire-->
+    Ajoute un commentaire :  <input type='text' name='gossip_comment'/><br/>
+    <input type='submit'/>
+  </form>
+  <a href = '/'>Retour à l'acceuil</a>
+</body>
+</html>

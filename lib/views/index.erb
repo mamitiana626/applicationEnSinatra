@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>sinatraProject</title>
+  </head>
+  <body>
+    <h3>Liste des Gossip enregistrés</h3>
+      <table border=1>
+        <tr>
+          <td>Num</td><td>Contenue</td><td>Action</td>
+        </tr>
+        <% gossips.each_with_index do |gossip,index| %><!-- On boucle sur le tableau de gossip et on les affiches tous-->
+          <tr>
+          <td><%= index %></td><td><%= gossip.content %></td><td> <a href = 'gossips/<%= index %>' >Detail</a> | <a href = 'gossips/delete/<%= index %>' >Supprimer</a></td>
+        </tr>
+        <% end %>
+      </table>
+    
+    <br><a href = '/gossips/new'>Ajouter un Gossip</a>
+  </body>
+</html>
